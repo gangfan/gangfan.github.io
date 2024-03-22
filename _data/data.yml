@@ -1,0 +1,284 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output. 
+#
+
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Gang Fan
+    tagline: Ph.D.
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: gfan@cse.ust.hk
+    phone:
+    website: www.gangf.com #do not add http://
+    linkedin: gangfan
+    github: fangang190
+    gitlab:
+    bitbucket: fangang190
+    twitter: '@fangang190'
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+
+    languages:
+      - idiom: Chinese
+        level: Native
+
+      - idiom: English
+        level: Professional
+
+      - idiom: Cantonese
+        level: Better than none
+        
+    interests:
+      - item: Badminton
+        link:
+
+      - item: Travelling
+        link:
+
+career-profile:
+    title: Career Profile
+    summary: |
+      Gang Fan is a staff software engineer at Ant Financial Services Group.
+      Before this, he obtained his Ph.D. degree in 2020, under the supervision of Charles Zhang and received his master's degree at the Hong Kong University of Science and Technology.
+      
+      His main area of research is programming languages, static analysis, and testing. He is current research mainly focuses on solving memory safety problems in industry-sized projects. His industry experiences mostly come from Baidu, Tencent, Vlintech, and Sourcebrella, where he is also a co-founder.
+education:
+    - degree: Ph.D. in Computer Science
+      university: Hong Kong University of Science and Technology
+      time: 2012 - Now
+      details: |
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+
+          - Bullet point
+          - Bullet point
+
+    - degree: MSc in Computer Science
+      university: Hong Kong University of Science and Technology
+      time: 2011 - 2012
+      details: |
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+
+          - Bullet point
+          - Bullet point 
+
+    - degree: BSc in Network Engineering
+      university: Dalian University of Technology
+      time: 2007 - 2011
+      details: |
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+
+          - Bullet point
+          - Bullet point 
+
+publications:
+    title: Publications
+
+    papers:
+      - title: "CodeFuse-13B: A Pretrained Multi-lingual Code Large Language Model"
+        authors: Peng Di, Jianguo Li, Hang Yu, Wei Jiang, Wenting Cai, Yang Cao, Chaoyu Chen, Dajun Chen, Hongwei Chen, Liang Chen, Gang Fan, Jie Gong, Zi Gong, Wen Hu, Tingting Guo, Zhichao Lei, Ting Li, Zheng Li, Ming Liang, Cong Liao, Bingchang Liu, Jiachen Liu, Zhiwei Liu, Shaojun Lu, Min Shen, Guangpei Wang, Huan Wang, Zhi Wang, Zhaogui Xu, Jiawei Yang, Qing Ye, Gehao Zhang, Yu Zhang, Zelin Zhao, Xunjin Zheng, Hailian Zhou, Lifu Zhu, Xianying Zhu
+        conference: ICSE-SEIP~2024
+        link: https://arxiv.org/abs/2310.06266
+        conflink: 
+
+      - title: "DCLink: Bridging Data Constraint Changes and Implementations in FinTech Systems"
+        authors: Wensheng Tang, Chengpeng Wang, Peisen Yao, Rongxin Wu, Xianjin Fu, Gang Fan, Charles Zhang
+        conference: ASE~2023
+        link: 
+        conflink: https://conf.researchr.org/details/ase-2023/ase-2023-papers/82/DCLink-Bridging-Data-Constraint-Changes-and-Implementations-in-FinTech-Systems
+
+      - title: "Synthesizing Conjunctive Queries for Code Search"
+        authors: Chengpeng Wang, Peisen Yao, Wensheng Tang, Gang Fan, Charles Zhang
+        conference: ECOOP~2023
+        link: 
+        conflink: https://2023.ecoop.org/details/ecoop-2023-papers/36/Synthesizing-Conjunctive-Queries-for-Code-Search
+
+      - title: "Verifying Data Constraint Equivalence in FinTech Systems"
+        authors: Chengpeng Wang, Gang Fan, Peisen Yao, Fuxiong Pan, Charles Zhang
+        conference: ICSE~2023
+        link: 
+        conflink: https://conf.researchr.org/details/icse-2023/icse-2023-technical-track/48/Verifying-Data-Constraint-Equivalence-in-FinTech-Systems
+
+      - title: "Accelerating Build Dependency Error Detection via Virtual Build"
+        authors: Rongxin Wu, Minglei Chen, Chengpeng Wang, Gang Fan, Jiguang Qiu, Charles Zhang
+        conference: ASE~2022
+        link: 
+        conflink: https://conf.researchr.org/details/ase-2022/ase-2022-research-papers/49/Accelerating-Build-Dependency-Error-Detection-via-Virtual-Build
+        
+      - title: "Transcode: Detecting Status Code Mapping Errors in Large-Scale Systems"
+        authors: Wensheng Tang, Yikun Hu, Gang Fan, Peisen Yao, Rongxin Wu, Guangyuan Bai, Pengcheng Wang and Charles Zhang
+        conference: ASE~2021
+        link: 
+        conflink: https://conf.researchr.org/details/ase-2021/ase-2021-papers/65/Transcode-Detecting-Status-Code-Mapping-Errors-in-Large-Scale-Systems
+        
+      - title: "Escaping Dependency Hell: Finding Build Dependency Errors with the Unified Dependency Graph"
+        authors: Gang Fan, Chengpeng Wang, Rongxin Wu, Xiao Xiao, Qingkai Shi and Charles Zhang
+        conference: ISSTA~2020
+        link: assets/papers/veribuild_issta2020.pdf
+        conflink: https://conf.researchr.org/home/issta-2020
+
+      - title: "Conquering the Extensional Scalability Problem for Value-Flow Analysis Frameworks"
+        authors: Qingkai Shi, Rongxin Wu, Gang Fan, and Charles Zhang
+        conference: ICSE 2020
+        link: https://qingkaishi.github.io/public_pdfs/ICSE2020b.pdf
+        conflink: https://conf.researchr.org/home/icse-2019
+
+      - title: "SMOKE: Scalable Path-Sensitive Memory Leak Detection for Millions of Lines of Code"
+        authors: Gang Fan, Rongxin Wu, Qingkai Shi, Xiao Xiao, Jinguo Zhou,  and Charles Zhang
+        conference: ICSE, 2019
+        link: assets/papers/gang_smoke_icse2019_preprint.pdf
+        conflink: https://2019.icse-conferences.org/event/icse-2019-technical-papers-smoke-scalable-path-sensitive-memory-leak-detection-for-millions-of-lines-of-code
+        award: ACM SIGSOFT Distinguished Paper Award
+        award2: ACM Artifacts Evaluated REUSABLE Award
+
+      - title: "Pinpoint: Fast and Precise Sparse Value Flow Analysis for Million Lines of code"
+        authors: Qingkai Shi, Xiao Xiao, Rongxin Wu, Jinguo Zhou, Gang Fan, and Charles Zhang
+        conference: PLDI, 2018
+        link: assets/papers/pinpoint_pldi2018.pdf
+        conflink: https://pldi18.sigplan.org/track/pldi-2018-papers
+        award: ACM Artifacts Evaluated Functional Award
+
+      - title: "Snagle: A lightweight sparse conditional null pointer analysis and unreachable code detection"
+        authors: Gang Fan and Charles Zhang
+        conference: "PLDI SRC 2016"
+        link: assets/papers/Snagle-Poster.pdf
+        conflink: https://conf.researchr.org/track/pldi-2016/Student+Research+Competition+(SRC)
+
+      - title: Pinpoint源代码静态缺陷分析系统
+        authors: Xiao Xiao, Gang Fan, Jinguo Zhou, Qingkai Shi, and Charles Zhang
+        conference: "National Software Application Conference (NASAC) 2016"
+        conflink: http://www.nasac2016.ynu.edu.cn/index.html
+        award: NASAC 2016 Research Prototype First Class Award
+
+awards:
+    title: Awards
+    intro: |
+      Some Awards.
+
+    awards:
+      - award: 2018 First Class Prize
+        conference: "NASAC 2018 Research Prototype (Propositional) Competition"
+        conflink: http://nasac2018.szu.edu.cn/
+
+      - award: 2018 First Class Prize
+        conference: "NASAC 2018 Research Prototype (Free Topic) Competition"
+        conflink: http://nasac2018.szu.edu.cn/
+
+      - award: 2017 The first fifteen in GMIC G-Startup Entrepreneur Competition
+
+      - award: 2016 Baidu First-Class Intern Award
+
+      - award: 2016 First Class Prize
+        conference: "NASAC 2016 Research Prototype Competition"
+        conflink: http://www.nasac2016.ynu.edu.cn/index.html
+
+      - award: 2010 Tencent Campus Star
+
+      - award: 2009 Kwang-Hua Scholarship for excellent students
+
+      - award: 2009 First-Class Scholarship for excellent students of DUT
+
+
+experiences:
+
+    - role: Staff Software Engineer
+      time: 2020 - Present
+      company: Ant Financial Services Group
+      details: |
+        www.antfin.com.
+
+    - role: Co-Founder & Software Engineer
+      time: 2016 - 2020
+      company: Shenzhen Qianhai Sourcebrella Inc.
+      details: |
+        www.sourcebrella.com.
+
+
+    - role: Internship in Baidu
+      time: 2016 - 2018
+      company: Baidu, Shenzhen
+      details: |
+        In Baidu, I helped integrate static analysis into the code review workflow.
+
+
+    - role: Software Engineer
+      time: 2012 - 2012
+      company: Vlintech, Shanghai
+      details: |
+        In Vlin, we built a smarthome system.
+
+    - role: iOS Developer
+      time: 2010 - 2011
+      company: Xiaohe Tech, Shenzhen
+      details: |
+        We published several top-ranking iOS apps.
+
+projects:
+    title: Projects
+    intro: >
+      You can list your side projects or open source libraries in this
+      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+
+    assignments:
+      - title: Velocity
+        link: "#hook"
+        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+      - title: DevStudio
+        link: "#"
+        tagline: "A responsive website template designed to help web developers/designers market their services."
+
+      - title: Tempo
+        link: "#"
+        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+      - title: Atom
+        link: "#"
+        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+      - title: Delta
+        link: "#"
+        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Python & Django
+        level: 98%
+
+      - name: Javascript & jQuery
+        level: 98%
+
+      - name: Angular
+        level: 98%
+
+      - name: HTML5 & CSS
+        level: 95%
+
+      - name: Ruby on Rails
+        level: 85%
+
+      - name: Sketch & Photoshop
+        level: 60%
+
+footer: >
+    The template is from <i class="fas fa-heart"></i> <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

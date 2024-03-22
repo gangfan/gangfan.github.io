@@ -1,0 +1,50 @@
+# This is a sample build configuration for Ruby.
+# Check our guides at https://confluence.atlassian.com/x/8r-5Mw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image:
+  name: jekyll/builder
+  run-as-user: 1000
+
+pipelines:
+  custom: # Pipelines that can only be triggered manually:
+      buildcse:
+         - step:
+              name: Build
+              caches:
+                - bundler
+              script: # Modify the commands below to build your repository.
+                - bundler --version
+                - bundle install --path vendor/bundle
+                - bundle exec jekyll b --config "_config.yml,cse.yml"
+              artifacts:
+                - _site/**
+
+         - step:
+              name: Copy To CSE
+              #trigger: manual
+              image: instrumentisto/rsync-ssh
+              deployment: production
+              script: # Modify the commands below to build your repository.
+                - rsync -avzP _site/  gfan@ras.cse.ust.hk:/homes/gfan/public_html/
+
+      update_gihub:
+         - step:
+              name: Update To Github
+              deployment: production
+              image: alpine/git
+              script:
+                - rm -rf .git
+                - git init
+                - git add *
+                - git config --global user.email "1679432+gangfan@users.noreply.github.com"
+                - git config --global user.name "Gang Fan"
+                - git commit -m "site update"
+                - git remote add github git@github.com:gangfan/gangfan.github.io.git
+                - git push -f github master
+
+
+definitions:
+  caches:
+    bundler: vendor/bundle

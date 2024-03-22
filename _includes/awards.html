@@ -1,0 +1,42 @@
+{% assign awards = site.data.data.awards %}
+{% if awards %}
+<section class="section awards-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ awards.title }}
+  </h2>
+
+  {% if awards.intro %}
+  <div class="intro">
+    {{ awards.intro | markdownify }}
+  </div><!--//intro-->
+  {% endif %}
+
+  {% for publication in awards.awards %}
+  <div class="item">
+
+    <div class="publication-title">
+      {% if publication.link %}
+      <a href="{{ publication.link }}">{{ publication.award }}</a>
+      {% else %}
+      {{ publication.award }}
+      {% endif %}
+    </div>
+    <div class="publication-conference">
+      {% if publication.conflink %}
+      <a href="{{ publication.conflink }}">{{ publication.conference }}</a>
+      {% else %}
+      {{ publication.conference }}
+      {% endif %}
+    </div>
+  <br>
+
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
